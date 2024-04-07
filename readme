@@ -1,0 +1,33 @@
+Task 1 - Making a simple webserver:
+
+Files:
+server.py & index.html
+
+Description:
+The code implements the socket module and listens for incomming TCP connections.
+When we recieve the HTTP request from client, it attempts to retrieve the file requested. If the file exists we get a HTTP code 200 (OK). If the file is not there we get the 404 error (Not Found).
+
+See the image "Task1-proof.png".
+
+---
+
+Task 2 - Making a web client:
+
+Files:
+client.py & testTask2.txt
+
+Description:
+This code is a HTTP client which interacts with a web server. We begin with prompting the user for the IP, port and name of the file we want to request. With this information we establish a TCP-connection to a server.
+
+---
+
+Task 3 - Making a multi-threaded web server:
+
+Files:
+multi-server.py
+
+Description:
+The python file sets up a multi-threaded TCP-server that listens for incomming ocnnections with a max queue at 5.
+We also have a simple error-handling to manage exceptions and close the server, then return either 200 or 404.
+
+Used https://github.com/safiqul/2410/blob/main/thread/tcpserver-multi.py for inspiration.
